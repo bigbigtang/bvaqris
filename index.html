@@ -24,9 +24,9 @@
       gtag('config', 'UA-133220745-1');
     </script>
     <script type="text/javascript">
-        var push_event = function(url, name) {
-            gtag('event', name, {
-                'event_label':name,
+        var push_event = function(url) {
+            gtag('event', url, {
+                'event_label':url,
                 'url':url
             });
             // alert(url);
@@ -64,7 +64,7 @@
                     </div>
                     <div class="mui-card-content hot-recommend-box">
                         <ul class="mui-table-view" id="SupermarketRecommendList">
-                            <li supermarketid="3075" class="mui-table-view-cell mui-media hot-recommend-item"><a href="https://cash-api.jiehuahua.com/web/index.html?channel=TEPIQB" onclick="push_event(this.href, 'Mudah Uang');return false">
+                            <li supermarketid="3075" class="mui-table-view-cell mui-media hot-recommend-item"><a href="https://cash-api.jiehuahua.com/web/index.html?channel=TEPIQB" onclick="push_event(this.href);return false">
                             <img src="./img/img_01.png" class="mui-media-object mui-pull-left"><div class="mui-media-body"><h4>Mudah Uang</h4><div class="mui-row hot-recommend-item-detail">Rp600.000-Rp1.200.000</div><div class="hot-recommend-item-intro mui-ellipsis">10 detik sertifikasi</div></div></a>
                             </li>
                             <li class="mui-table-view-cell mui-media hot-recommend-item">
@@ -76,7 +76,7 @@
                             <img src="./img/img_02.png" class="mui-media-object mui-pull-left"><div class="mui-media-body"><h4>Dana Kanguru</h4><div class="mui-row hot-recommend-item-detail">Rp600.000-Rp1.200.000</div><div class="hot-recommend-item-intro mui-ellipsis">Kutota tinggi Bunga rendah</div></div></a>
                             </li>
                             <li supermarketid="1666" class="mui-table-view-cell mui-media hot-recommend-item">
-                            <a href="http://149.129.218.150:11132/#/" onclick="push_event(this.href);return false">
+                            <a href="http://149.129.218.150:11132/#/" onclick="push_event(this.href); return false">
                             <img src="./img/img_06.jpg" class="mui-media-object mui-pull-left"><div class="mui-media-body"><h4>Wall In</h4><div class="mui-row hot-recommend-item-detail">Rp600.000-Rp2.000.000</div><div class="hot-recommend-item-intro mui-ellipsis">Ayo ikuti kegiatan promo baru dari kami!</div></div></a>
                             </li>
 
