@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <!-- Start of Woopra Code -->
-    <script>
+<!--     <script>
       (function(){
         var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
       })("woopra");
@@ -11,7 +11,7 @@
           domain: 'mighin.xyz'
       });
       woopra.track();
-    </script>
+    </script> -->
     <!-- End of Woopra Code -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133220745-1">
@@ -22,6 +22,15 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-133220745-1');
+    </script>
+    <script type="text/javascript">
+        var push_event = function(url) {
+            gtag('event', url, {
+                'url':url
+            });
+            // alert(url);
+            setTimeout("document.location='" + url + "'", 500);
+        }
     </script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -54,7 +63,7 @@
                     </div>
                     <div class="mui-card-content hot-recommend-box">
                         <ul class="mui-table-view" id="SupermarketRecommendList">
-                            <li supermarketid="3075" class="mui-table-view-cell mui-media hot-recommend-item"><a href="https://cash-api.jiehuahua.com/web/index.html?channel=TEPIQB">
+                            <li supermarketid="3075" class="mui-table-view-cell mui-media hot-recommend-item"><a href="https://cash-api.jiehuahua.com/web/index.html?channel=TEPIQB" onclick="push_event(this.href);return false">
                             <img src="./img/img_01.png" class="mui-media-object mui-pull-left"><div class="mui-media-body"><h4>Mudah Uang</h4><div class="mui-row hot-recommend-item-detail">Rp600.000-Rp1.200.000</div><div class="hot-recommend-item-intro mui-ellipsis">10 detik sertifikasi</div></div></a>
                             </li>
                             <li class="mui-table-view-cell mui-media hot-recommend-item">
@@ -79,6 +88,5 @@
                 </div>
             </div>
         </div>
-
 
 </body></html>
