@@ -21,12 +21,12 @@
             // alert(url);
             setTimeout("document.location='" + url + "'", 500);
         }
-        var push_event_comment = function(url,num) {
-            gtag('event',num, {
-                'event_label':num,
-                'url':num
+        var push_event_comment = function(url,flag) {
+            gtag('event',flag, {
+                'event_label':flag,
+                'url':flag
             });
-            // alert(url);
+            alert(flag);
             setTimeout("document.location='" + url + "'", 500);
         }
     </script>
@@ -188,15 +188,15 @@
                         <!--</a>-->
                     </div>
                     <ul>
-                        <li><a href="http://149.129.218.150:11132" onclick="push_event_comment(this.href,01)"><span>[Andi] : </span>Dicairinnya cepat banget, sebentar aja udh langsung masuk ke akun! </a>
+                        <li><a href="http://149.129.218.150:11132" onclick="push_event_comment(this.href,'com01')"><span>[Andi] : </span>Dicairinnya cepat banget, sebentar aja udh langsung masuk ke akun! </a>
                         </li>
-                        <li><a href="https://static.uangtech.com/html/tg/dk_sevenus.html" onclick="push_event_comment(this.href,02)"><span>[Sisca] : </span>Pengajuan aplikasinya beneran sangat mudah, 1 menit bs langsung berhasil</a>
+                        <li><a href="https://static.uangtech.com/html/tg/dk_sevenus.html" onclick="push_event_comment(this.href,'com02')"><span>[Sisca] : </span>Pengajuan aplikasinya beneran sangat mudah, 1 menit bs langsung berhasil</a>
                         </li>
-                        <li><a href="https://cash-api.jiehuahua.com/web/index.html?channel=TEPIQB" onclick="push_event_comment(this.href,03)"><span>[Putra] : </span>Suku bunganya oke bgt, dibanding dgn apps lain, yg ini jauuh lebih bagus!</a>
+                        <li><a href="https://cash-api.jiehuahua.com/web/index.html?channel=TEPIQB" onclick="push_event_comment(this.href,'com03')"><span>[Putra] : </span>Suku bunganya oke bgt, dibanding dgn apps lain, yg ini jauuh lebih bagus!</a>
                         </li>
-                        <li><a href="http://149.129.218.150:11132" onclick="push_event_comment(this.href,04)"><span>[Jessica] : </span>Klo lagi butuh uang, jadi super gampang! Udh gitu, gak ngaruh jg sama kredit pribadi</a>
+                        <li><a href="http://149.129.218.150:11132" onclick="push_event_comment(this.href,'com04')"><span>[Jessica] : </span>Klo lagi butuh uang, jadi super gampang! Udh gitu, gak ngaruh jg sama kredit pribadi</a>
                         </li>
-                        <li><a href="http://149.129.218.150:11132" onclick="push_event_comment(this.href,05)"><span>[Rico] : </span>Rekomendasi apps pinjaman ini ternyata bisa diapply bersamaan? Wah praktis bgt! TOP!!</a>
+                        <li><a href="http://149.129.218.150:11132" onclick="push_event_comment(this.href,'com05')"><span>[Rico] : </span>Rekomendasi apps pinjaman ini ternyata bisa diapply bersamaan? Wah praktis bgt! TOP!!</a>
                         </li>
                     </ul>
                 </div>
