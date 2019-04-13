@@ -1,0 +1,10 @@
+.float-app-icon-show{
+    position: fixed;
+     z-index: 1000; 
+     bottom: 130px;
+     right: 10px;
+}
+
+.float-app-icon-hide{
+    display: none;
+}
